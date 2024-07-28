@@ -6,7 +6,7 @@ export class Model {
 
   async loadingData() {
     return new Promise((resolve, reject) => {
-      fetch("data.json")
+      fetch("./data.json")
         .then((res) => res.json())
         .then((data) => {
           this.data = data;
